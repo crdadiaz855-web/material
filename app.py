@@ -21,7 +21,7 @@ app.config.suppress_callback_exceptions = True
 
 # Load data from csv
 def load_data():
-    df = pd.read_csv(r"C:\Users\crist\OneDrive\Escritorio\material\datos_energia.csv", encoding="utf-8-sig")
+    df = pd.read_csv("datos_energia.csv", encoding="utf-8-sig")
 
     # Detecta la columna de fecha más común en estos datasets
     candidatos = ["Fecha", "date", "datetime", "timestamp", "local_timestamp", "time"]
